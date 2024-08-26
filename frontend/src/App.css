@@ -1,0 +1,765 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  background-color: #425047 !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar */
+
+.typographyNavHeading {
+  flex-grow: 1 !important;
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .typographyNavHeading {
+    display: flex !important;
+    /* Display as flex on medium screens and larger */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .typographyNavHeading {
+    display: none !important;
+    /* Hide on extra small screens */
+  }
+}
+
+.iconButon {
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .iconButon {
+    display: flex !important;
+    /* Display as flex on medium screens and larger */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .iconButon {
+    display: none !important;
+    /* Hide on extra small screens */
+  }
+}
+
+.boxForLargeScreen {
+  display: none;
+  font-size: 20px !important;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .boxForLargeScreen {
+    display: flex !important;
+    /* Display as flex on medium screens and larger */
+
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .boxForLargeScreen {
+    display: none !important;
+    /* Hide on extra small screens */
+  }
+}
+
+.boxForSmallScreen {
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .boxForSmallScreen {
+    display: none !important;
+    /* Hide on extra medium screens and larger  */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .boxForSmallScreen {
+
+    display: flex !important;
+    /* Display as flex on  small screens*/
+
+  }
+}
+
+.typographyNavHeadingSmall {
+  flex-grow: 1 !important;
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .typographyNavHeadingSmall {
+    display: none !important;
+    /* Hide on extra medium screens and larger  */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .typographyNavHeadingSmall {
+    display: flex !important;
+    /* Display as flex on  small screens*/
+  }
+}
+
+.iconButonSmall {
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .iconButonSmall {
+    display: none !important;
+    /* Hide on extra medium screens and larger  */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .iconButonSmall {
+    display: flex !important;
+    /* Display as flex on  small screens*/
+  }
+}
+
+.menuSmall {
+  display: none;
+}
+
+/* Medium screen and larger (md and up) */
+@media (min-width: 768px) {
+  .menuSmall {
+    display: none !important;
+    /* Hide on extra medium screens and larger  */
+  }
+}
+
+/* Extra small screen (xs) */
+@media (max-width: 767px) {
+  .menuSmall {
+    display: flex !important;
+    /* Display as flex on  small screens*/
+  }
+}
+
+.MuiPaper-root {
+  top: 70px !important;
+  scrollbar-width: 10px;
+}
+
+.btnLogout {
+  color: white !important;
+}
+
+.btnLogoutSmall {
+  color: rgb(8, 8, 8) !important;
+  margin-bottom: 3px !important;
+}
+
+.btnSmallKart {
+  display: flex !important;
+  flex-direction: column !important;
+  margin: none !important;
+}
+
+/* Home */
+
+.selectFood {
+  margin: 3px !important;
+  background-color: rgb(42, 212, 144) !important;
+  /* width: 15% !important; */
+  /* height: 25px !important; */
+}
+
+.selectPlate {
+  margin: 3px !important;
+  background-color: rgb(42, 212, 144) !important;
+  /* width: 15% !important; */
+  /* height: 25px !important; */
+}
+
+.totalPrice {
+  display: inline !important;
+}
+
+.foodName {
+  color: white;
+}
+
+.categoryName {
+  color: white;
+  font-size: 25px !important;
+}
+
+/* Footer  */
+
+.footer-root {
+  background-color: #9c27b0;
+  ;
+  margin-top: auto;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerMainGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-grid-item {
+  text-align: start;
+  color: white;
+}
+
+.footer-link-list {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.textWeb{
+  color: white;
+  font-size: 25px;
+}
+
+/* Slide */
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 600px !important;
+  /* Ensure images maintain aspect ratio */
+  object-fit: cover;
+  opacity: 0.6;
+
+}
+
+.search-overlay {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  /* Ensure search field is above carousel images */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding: 10px; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40% !important;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  /* Set a maximum width to prevent it from spanning the entire screen on larger devices */
+  margin: 0 auto;
+  /* Center the search bar horizontally */
+  /* padding: 10px; */
+}
+
+.search-field {
+  flex: 1;
+  padding: 8px;
+  border: 4px solid green;
+  outline: none;
+  font-size: 14px;
+  background: #323131;
+  color: white;
+  margin-right: 5px;
+  /* Add margin between input field and button */
+}
+
+.search-overlay Button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-overlay button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .search-overlay {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: stretch;
+    /* Stretch items to full width */
+  }
+
+  .search-field {
+    margin-right: 0;
+    /* Remove margin on smaller screens */
+    margin-bottom: 10px;
+    /* Add spacing between input and button */
+  }
+}
+
+@media (min-width: 1201px) {
+  .col-lg-3 {
+    background-color: #425047;
+    width: 32% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .col-lg-3 {
+    background-color: #425047;
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-3 {
+    background-color: #425047;
+    width: 100% !important;
+  }
+}
+
+.container {
+  background-color: #425047;
+}
+
+.css-46bh2p-MuiCardContent-root {
+  padding: 16px;
+  background-color: #425047 !important;
+}
+
+.total {
+  color: white;
+}
+
+.btnAdd {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Cart */
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.cartEmpty {
+  color: white !important;
+  font-size: 45px !important;
+}
+
+.cartEmptyContainer {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.modalCart {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.cartTotalPrice {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+th {
+  color: rgb(87, 238, 68);
+}
+
+td {
+  color: rgb(95, 244, 36);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #292727;
+}
+
+/* Myorder */
+#orderBody {
+  color: rgb(242, 240, 240) !important;
+  background-color: #425047 !important;
+  ;
+}
+
+.orderDate {
+  color: white !important;
+}
+
+/* login */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url('Image/logIn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+/* Styling for the form container */
+.formLogin {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Transparent background */
+  padding: 40px;
+  padding-bottom: 60px;
+  /* Additional padding for height */
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  /* Slightly darker shadow for contrast */
+  backdrop-filter: blur(10px);
+  /* Blur effect for the background */
+}
+
+/* Header typography styling */
+.formLogin .MuiTypography-h4 {
+  color: #FFFFFF;
+  /* White color for contrast */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for input fields with icons */
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputWithIcon .MuiTextField-root {
+  flex-grow: 1;
+}
+
+.inputWithIcon input {
+  color: white !important;
+}
+
+.inputWithIcon .icon {
+  margin-right: 10px;
+  margin-top: 20px;
+  color: inherit;
+  /* Inherit color */
+}
+
+/* Primary button styling */
+.MuiButton-containedPrimary {
+  background-color: #66FCF1;
+  color: #1F2833;
+  font-weight: bold;
+}
+
+/* Secondary button styling */
+.MuiButton-containedSecondary {
+  background-color: #C5C6C7;
+  color: #1F2833;
+  font-weight: bold;
+}
+
+/* Link styling */
+.alreadyUser {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for the button container */
+.btnSignup {
+  display: flex;
+  justify-content: center;
+  /* Center the buttons */
+  margin-top: 20px;
+  gap: 10px;
+  /* Add some space between the buttons */
+}
+
+/* Styling for TextField when focused */
+.MuiTextField-root.Mui-focused .MuiInput-underline:after {
+  border-bottom-color: #C5C6C7;
+  /* Secondary color */
+}
+
+.MuiInput-underline:before {
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+  /* Default underline color */
+}
+
+.MuiInput-underline:hover:before {
+  border-bottom-color: #FFFFFF;
+  /* Hover underline color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formLogin {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .btnSignup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnSignup Button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: black !important;
+}
+
+
+/* #\:r1\:-label {
+  color: rgb(232 181 127) !important;
+}
+
+#\:r3\:-label {
+  color: rgb(232 181 127) !important;
+} */
+
+label {
+  color: rgb(232 181 127) !important;
+}
+
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputWithIcon .MuiTextField-root {
+  flex-grow: 1;
+}
+
+.inputWithIcon input {
+  color: inherit;
+}
+
+.inputWithIcon .icon {
+  margin-right: 10px;
+  margin-top: 20px;
+  color: inherit;
+}
+
+.inputWithIcon .eyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 80%;
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+/* Signup.css */
+
+.background {
+  background-image: url('Image/SignUptwo.jpg');
+  /* Update the path to your image */
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.transparent-form {
+  background: rgba(255, 255, 255, 0.2);
+  ;
+  /* Fully transparent form */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: white !important;
+}
+
+.input-with-icon svg {
+  margin-right: 10px;
+  margin-top: 20px;
+  color: black;
+  opacity: 0.9;
+}
+
+.MuiTextField-root {
+  flex: 1;
+  background: transparent;
+}
+
+.btnSignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.alreadyUser {
+  color: #fff;
+  text-decoration: none;
+}
+
+.alreadyUser:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .transparent-form {
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .btnSignup {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.MuiTypography-h4 {
+  color: white;
+}
+
+#inputSignupName {
+  color: white !important;
+}
+
+#inputSignupEmail {
+  color: white;
+}
+
+#inputSignupPassword {
+  color: white;
+}
+
+#inputSignupLocation {
+  color: white;
+}
+
+.visibility-icon-Signup {
+  color: #888;
+  margin-bottom: 12px !important;
+
+}
+
+.oderhistoryNone {
+  height: 82.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+}
+
+#root > div > div.container > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-bob89j-MuiPaper-root-MuiCard-root {
+  height: 0;
+  width: 0;
+}
